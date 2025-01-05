@@ -1,0 +1,785 @@
+*{
+  font-family:Arial;
+  transition:0.5s;
+}
+
+body{
+  margin:0 auto;
+  background-image: linear-gradient(90deg,rgba(255, 233, 173, 0.9),rgba(255, 221, 108, 0.9));
+  color:black;
+}
+
+.container{
+  display:flex;
+}
+a{
+  text-decoration:none;
+}
+.center{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* logo */
+.logo {
+    padding: 0px 10px 0px 20px;
+    max-height: 30px;
+    transition-duration: 2s;
+}
+.logo:hover{
+  max-height: 40px;
+  transform: rotate(360deg);
+}
+
+/* nav bar */
+#topbar{
+  position: sticky;
+  width: 100%;
+  top: 0;
+  left:0;
+  z-index: 2;
+  background-color:rgba(85,75,75,0.9);
+}
+
+nav{
+  width: 100%;
+}
+nav a{
+  flex:1;
+  text-align: center;
+  letter-spacing:2px;
+  font-size:18px;
+  padding: 15px 17px;
+  max-height:40px;
+  color:gold;
+  text-shadow:1px 1px 5px black;
+}
+
+nav h4{
+  display:inline;
+}
+
+#topbarleft{
+  width:390px;
+  max-height:50px;
+}
+
+#topbarleft h2{
+  display:inline;
+  padding: 0px 5px;
+  color:gold;
+}
+#topbarlogo{
+  display: flex;
+  align-items:center;
+  justify-content: left;
+  flex:1;
+}
+#topbarlogo h2{
+  display:inline;
+  letter-spacing:3px;
+}
+
+/* banner */
+#banner hr{
+  width:100%;
+  max-width:750px;
+  height:3px;
+  background-color:gold;
+}
+
+#banner h1 h2{
+  flex:1;
+  line-height:0px;
+}
+
+#banner h2{
+  color:gold;
+}
+
+#title{
+  margin:0px;
+  font-size:100px;
+  letter-spacing:12px;
+  color:gold;
+}
+#title:hover{
+  letter-spacing:14px;
+  text-shadow:2px 2px 5px black;
+}
+
+#banner{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(images/banner.webp);
+  box-shadow:inset 0px 0px 70px 60px rgba(0, 0, 0, 0.3);
+  padding:230px 0px;
+  display:flex;
+  flex-direction:column;
+  text-shadow:1px 1px 5px black;
+  transition: 2s;
+  transition-timing-function: linear, ease-in;
+}
+
+#banner:hover{
+  background-size: 120%;
+}
+
+/* articles */
+.article{
+  padding:30px;
+  height:400px;
+  flex-direction:column;
+  align-items:center;
+}
+.article h1{
+  letter-spacing:4px;
+  color:rgb(207, 181, 59);
+  line-height:300px;
+  max-height:50px;
+  font-size:45px;
+  font-weight:bold;
+  text-shadow:1px 1px 5px black;
+}
+.article p{
+  flex:0;
+  width:100%;
+  padding:0px 30px;
+  position: relative;
+  bottom:140px;
+  text-align:center;
+  color:black;
+  font-size: 24px;
+  line-height: 40px;
+  letter-spacing: 3px;
+}
+.article h3{
+  position: relative;
+  bottom:170px;
+  text-align:center;
+  color:black;
+  padding:10px 30px;
+  background-color:white;
+  border:2px solid black;
+  border-radius:10px;
+  margin-bottom:50px;
+}
+.article h3:hover{
+  box-shadow:1px 1px 5px rgba(0,0,0,0.8);
+  background-color:rgb(249, 230, 108);
+  transition:1.5s;
+}
+.showup{
+  filter:opacity(0%);
+}
+.showup:hover{
+  filter:opacity(100%);
+  transition:1.5s;
+}
+
+/* content */
+#geography {
+    background-image: linear-gradient(90deg,rgba(174,159,128,0.80),rgba(166,123,91,0.80)), url(https://www.toursmongolia.com/uploads/Mongolia_geography.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: inset 5px -5px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+#geography p{
+  background-color:rgb(174,159,128)
+}
+
+#culture {
+    background-image: linear-gradient(90deg,rgba(226, 178, 117,0.80),rgba( 90,75,54,0.80)), url(https://global.si.edu/sites/default/files/IMG_2081%20%281%29.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: inset 5px -5px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+#culture p{
+  background-color:rgb(174,159,128)
+}
+#history {
+  background-image: linear-gradient(90deg,rgba(174,159,128,0.80),rgba(166,123,91,0.80)), url(https://www.discovermongolia.mn/uploads/cover-culture-8-viusal-arts.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: inset 5px -5px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+#history p{
+  background-color:rgb(174,159,128)
+}
+
+/* intro */
+#intro{
+  padding:10px;
+  box-shadow: inset 5px -5px 0px 5px rgba(0, 0, 0, 0.1);
+  background-color:beige;
+}
+
+#intro hr{
+  width: 3px;
+  min-height: 380px;
+  background-color: black;
+  border-color:black;
+}
+
+#intro h2{
+  font-size: 36px;
+  color:gold;
+  border-bottom: 1px solid black;
+  border-width:2px;
+  text-shadow: 1px 1px 5px black;
+}
+
+#intro div{
+  padding: 20px;
+}
+
+#intro p{
+  margin-left: 40px;
+  margin-right: 40px;
+  letter-spacing:2px;
+  line-height:30px;
+  font-size:18px;
+}
+
+#map img{
+  border-radius:10px;
+  filter: drop-shadow(0px 1px 1px black);
+  margin-top: 0px;
+  margin-bottom: 10px;
+  transition: 0.5s;
+}
+
+#map img:hover{
+  filter: drop-shadow(0px 5px 5px black);
+  margin-top: -10px;
+  margin-bottom: 10px;
+  transition: 0.5s;
+}
+
+/* footer */
+#footer{
+  display:flex;
+  text-align:center;
+  flex-direction: column;
+  background-color:rgb(85,75,75);
+  color:gold;
+  text-shadow:1px 1px 5px black;
+  padding:40px;
+}
+
+#footerlogo{
+  display: flex;
+  align-items:center;
+  justify-content: left;
+  flex:1;
+}
+#footerlogo h2{
+  display:inline;
+  letter-spacing:3px;
+  color:gold
+}
+
+#footer div{
+  flex:1;
+}
+
+#footer a{
+  max-width:fit-content;
+}
+
+#resources h4{
+  letter-spacing:2px;
+  display:inline;
+}
+
+#topbarlogo{
+  color:gold;
+  text-shadow:1px 1px 5px black;
+}
+
+#follow{
+  display:flex;
+  flex-direction: column;
+}
+#follow a{
+  display:flex;
+  line-height:0px;
+  flex:1;
+  align-items:center;
+  color:gold;
+  text-shadow:1px 1px 5px black;
+}
+
+#resources{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+#resources h3{
+  text-shadow: 1px 1px 5px black;
+  letter-spacing: 3px;
+  border-bottom: 2px solid white;
+  margin: 8px 8px 15px 8px;
+}
+
+#resources h4{
+  text-shadow: 1px 1px 5px black;
+  color:gold;
+  font-size: 17px;
+  letter-spacing: 2px;
+  line-height: 25px;
+  margin:8px;
+}
+
+
+#resources div {
+  flex: 1;
+  padding: 10px 15px;
+}
+
+#resources img{
+  padding:0px 10px 0px 20px;
+  max-height:20px;
+  max-width:20px;
+}
+
+#resources a{
+  display:flex;
+}
+
+#copyright{
+  text-shadow: 1px 1px 5px black;
+  letter-spacing: 3px;
+  text-align: right;
+  font-size:18px;
+
+}
+
+#copyright h4{
+  text-align: right;
+}
+
+.part{
+  display: flex;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.part div{
+  box-shadow: inset -5px -5px 0px 3px rgba(0, 0, 0, 0.2);
+  padding: 40px 50px;
+  flex: 1;
+}
+
+.part h2{
+  font-size: 28px;
+  letter-spacing: 3px;
+  border-bottom: 2px solid rgba(139,69,19, 0.8);
+}
+
+.part p:hover{
+  filter:opacity(0%);
+}
+
+.part div:hover{
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  color:rgba(255, 255, 255, 0);
+}
+
+p, h2 {
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+  color:gold;
+}
+
+p{
+  letter-spacing: 2px;
+  line-height: 30px;
+  font-size: 18px;
+}
+
+/* geography */
+#geographyhome{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("https://s3-us-west-2.amazonaws.com/content-markdown-images/mongolian-location-overview/image0.jpeg");
+  box-shadow:inset 0px 0px 70px 60px rgba(0, 0, 0, 0.3);
+  padding:230px 0px;
+  display:flex;
+  flex-direction:column;
+  text-shadow:1px 1px 5px black;
+  transition-timing-function: linear, ease-in;
+}
+
+#geographyhome hr{
+  width:100%;
+  max-width:750px;
+  height:1px;
+  background-color:gold;
+}
+
+#geographyhome h1 h2{
+  flex:1;
+  line-height:0px;
+}
+
+#geographyhome h2{
+  color:gold;
+}
+
+.translate:hover{
+  transition:1s;
+}
+
+.new {
+    opacity: 0;
+}
+
+.old, .new {
+    transition: opacity 0.25s linear;
+}
+
+.translate:hover .old{
+  opacity: 0;
+  display:none;
+}
+
+.translate:hover .new{
+  opacity: 1;
+}
+
+#imagemap{
+  flex:1;
+  flex-direction:column;
+  box-shadow: inset 5px -5px 0px 5px rgba(0, 0, 0, 0.1);
+  color:gold;
+  background-image: linear-gradient(90deg,rgba(255, 233, 173, 0.9),rgba(255, 221, 108, 0.9));
+}
+
+#imagemap img{
+  filter: drop-shadow(0px 1px 1px black);
+  transition: 0.5s;
+}
+
+#imagemap img:hover{
+  filter: drop-shadow(0px 5px 5px black);
+  margin-top: -10px;
+  margin-bottom: 10px;
+  transition: 0.5s;
+}
+
+
+#imagemap h2{
+  font-size: 36px;
+  letter-spacing: 3px;
+  color: gold;
+  text-shadow: 1px 1px 5px black;
+  border-bottom: 2px solid rgba(139,69,19, 0.8);
+}
+
+#imagemap h3{
+  border-radius:2px;
+  background-color:beige;
+  color:goldenrod;
+  border:2px solid black;
+  border-radius:5px;
+  margin-bottom:50px;
+  padding:10px 30px;
+}
+
+#climate{
+  background-color:rgb(230, 115, 0)
+}
+
+#climate:hover{
+  background-image:linear-gradient(0deg,rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url("https://umaine.edu/news/wp-content/uploads/sites/3/2016/07/Mongolia-News-feature-low-resolution.jpg")
+}
+
+#fauna{
+  background-color:rgb(255, 102, 26);
+}
+
+#fauna:hover{
+  background-image:linear-gradient(0deg,rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url("https://d31xsmoz1lk3y3.cloudfront.net/games/imgur/AFTjohi.jpg")
+}
+
+#veg{
+  background-color:rgb(230, 0, 0);
+}
+
+#veg:hover{
+  background-image:linear-gradient(0deg,rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url("https://www.mdpi.com/diversity/diversity-13-00619/article_deploy/html/images/diversity-13-00619-g0A2.png")
+}
+
+/* culture */
+#culturehome{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("https://www.chinadaily.com.cn/culture/attachement/jpg/site1/20170419/f8bc126e49161a61548615.jpg");
+  box-shadow:inset 0px 0px 70px 60px rgba(0, 0, 0, 0.3);
+  padding:230px 0px;
+  display:flex;
+  flex-direction:column;
+  text-shadow:1px 1px 5px black;
+  transition-timing-function: linear, ease-in;
+}
+
+#culturehome hr{
+  width:100%;
+  max-width:750px;
+  height:1px;
+  background-color:gold;
+}
+
+#culturehome h1 h2{
+  flex:1;
+  line-height:0px;
+}
+
+#culturehome h2{
+  color:gold;
+}
+
+
+.border{
+  position:relative;
+  top:50px;
+  font-size: 35px;
+  letter-spacing: 3px;
+}
+
+.border h2{
+  background-color:beige;
+}
+
+.wrap{
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 5px -5px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.wrap p{
+  position: absolute;
+  background-color: rgba(85,75,75,0.9);
+  bottom: -20px;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  z-index: 1;
+  width: 80%;
+  height: 20%;
+  transition: 0.2s;
+  padding: 20px;
+  overflow: auto;
+  border-radius: 0px;
+  box-shadow:1px 1px 5px rgba(0,0,0,0.8);
+}
+
+.wrap img{
+  box-shadow:1px 1px 5px rgba(0,0,0,0.8);
+}
+
+.culturetps{
+  padding: 30px;
+  margin-bottom: 70px;
+}
+
+.zoom{
+  transition: 0.2s;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  z-index: 1;
+  padding: 20px;
+  position:relative;
+}
+
+.zoom h3{
+  text-align:center;
+  color:gold;
+  text-shadow:1px 1px 5px black;
+}
+
+
+/* history */
+#historyhome{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("https://www.toursmongolia.com/uploads/Chinggis_Khaan.jpg");
+  box-shadow:inset 0px 0px 70px 60px rgba(0, 0, 0, 0.3);
+  padding:230px 0px;
+  display:flex;
+  flex-direction:column;
+  text-shadow:1px 1px 5px black;
+  transition-timing-function: linear, ease-in;
+}
+
+#historyhome hr{
+  width:100%;
+  max-width:750px;
+  height:1px;
+  background-color:gold;
+}
+
+#historyhome h1 h2{
+  flex:1;
+  line-height:0px;
+}
+
+#historyhome h2{
+  color:gold;
+}
+
+
+.bar{
+  width: 100%;
+  background-color: rgb(174,159,128);
+  height: 50px;
+  box-shadow: 3px 3px 5px rgba(0,0,0,0.8);
+}
+
+.timeline div{
+    box-sizing: border-box;
+
+}
+
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: beige;
+  border: 2px solid rgba(174,159,128, 0.8);
+  color:gold;
+  text-shadow:1px 1px 5px black;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: rgb(126, 81, 9);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+.timecontainer {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+.timecontainer::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: #fff066;
+  border: 4px solid #fed42d;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  left: 50%;
+}
+
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid rgb(126, 81, 9);
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent rgb(126, 81, 9);
+}
+
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid rgb(126, 81, 9);
+  border-width: 10px 10px 10px 0;
+  border-color: transparent rgb(126, 81, 9) transparent transparent;
+}
+
+.right::after {
+  left: -16px;
+}
+
+.content {
+  padding: 20px 30px;
+  background-color: rgb(126, 81, 9);
+  position: relative;
+  border-radius: 6px;
+  box-shadow: 3px 3px 5px rgba(0,0,0,0.8);
+  max-height: 85px;
+  overflow:hidden;
+  transition: .5s linear;
+  transition-timing-function: ease-in-out;
+}
+
+.content:hover{
+  max-height:fit-content;
+}
+
+.content img{
+  max-height:300px;
+  box-shadow: 3px 3px 5px rgba(0,0,0,0.8);
+  border-radius: 6px;
+}
+
+@media screen and (max-width: 600px) {
+  .timeline::after {
+    left: 31px;
+  }
+
+  .timecontainer {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  .timecontainer::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  .left::after, .right::after {
+    left: 15px;
+  }
+
+  .right {
+    left: 0%;
+  }
+}
